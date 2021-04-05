@@ -10,7 +10,7 @@ total=0
 for line in $inventura_content; do
   if [[ ! -f $line ]]; then
     echo "Napaka v inventarju!"
-    exit 1
+    exit 10
   fi
   total=$(($total + $(stat -c %s $line)))
 done;

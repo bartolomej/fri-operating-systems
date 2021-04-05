@@ -5,6 +5,5 @@
 
 imenik=$1
 koncnica=$2
-prefix=$(echo "${imenik}" | rev | cut -d'/' -f-1 | rev)
 
-find "$imenik" -name "*.${koncnica}" | sort > "${imenik}"/"${prefix}"_inventura.txt
+find "$imenik" -name "*.${koncnica}" | sort > "$(dirname "$imenik")"/"$(basename "$imenik")"_inventura.txt
