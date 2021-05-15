@@ -2,7 +2,7 @@
 
 while true
 do
-  echo -n "Vnesi ukaz: "
+  echo -n "Vnesite ime ukaza: "
   # preberi besedilo iz tipkovnice, ter shrani vsebino v spremenljivko cmd
   read cmd
   # shrani izhod iz ukaza type v spremenljivko, preusmeri stderr v crno luknjo, da bo izpis v vsakem primeru prazen
